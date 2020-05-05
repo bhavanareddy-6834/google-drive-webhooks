@@ -4,7 +4,7 @@ const port = 8082
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
-app.get('/notifications', function (req, res) {
+app.post('/notifications', function (req, res) {
   console.log(req);
   res.setHeader('Content-Type', 'application/json');
   res.end('hello');
